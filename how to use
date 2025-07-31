@@ -1,0 +1,25 @@
+
+- To scan specific ports:
+    ```
+    python local_network_scanner.py --range 192.168.1.0/24 --ports 22,80,445
+    ```
+
+- For detailed vulnerability checks using Nmap:
+    ```
+    python local_network_scanner.py --range 192.168.1.0/24 --nmap
+    ```
+
+## Output
+
+- For each device: shows IP, MAC, open ports, and basic vulnerability notes.
+- If `--nmap` is used and Nmap is installed, detailed script-based vulnerability results are provided.
+
+## Notes
+
+- Run with administrative/root privileges for best results.
+- **Scan only networks you own or have explicit permission to test. Unauthorized scanning can be illegal.**
+- The built-in vulnerability check highlights common weaknesses but is not exhaustive.
+
+## Disclaimer
+
+This tool is for educational and authorized security testing on your own networks.
